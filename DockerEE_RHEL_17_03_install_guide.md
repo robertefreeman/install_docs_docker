@@ -15,11 +15,11 @@
 ### Setup Base Docker Server
 - Copy Docker EE URL to * /etc/yum/vars/dockerurl *
 ```
-sudo sh -c 'echo "https://storebits.docker.com/ee/linux/sub-1e9eb99d-3384-42d8-af13-5ff7d6610725/rhel" > /etc/yum/vars/dockerurl'
+sudo sh -c 'echo "<DOCKER-EE-URL>" > /etc/yum/vars/dockerurl'
 ```
 - Store your RHEL version string in * /etc/yum/vars/dockerosversion *
 ```
-sudo sh -c 'echo "<DOCKER-EE-URL>/centos" > /etc/yum/vars/dockerurl'
+sudo sh -c 'echo "<DOCKER-EE-URL>/rhel" > /etc/yum/vars/dockerurl'
 ```
 - Install require YUM Packages
 ```
